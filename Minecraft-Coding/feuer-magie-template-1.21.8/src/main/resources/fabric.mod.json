@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "feuer-magie",
+	"version": "${version}",
+	"name": "Feuer Magie",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/feuer-magie/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.feuermagie.pyromagie.FeuerMagie"
+		],
+		"fabric-datagen": [
+			"net.feuermagie.pyromagie.FeuerMagieDataGenerator"
+		]
+	},
+	"mixins": [
+		"feuer-magie.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
