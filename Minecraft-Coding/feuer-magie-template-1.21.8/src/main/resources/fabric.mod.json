@@ -3,15 +3,15 @@
 	"id": "feuer-magie",
 	"version": "${version}",
 	"name": "Feuer Magie",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod about Fire magic",
 	"authors": [
-		"Me!"
+		"Pyromagie"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Pyromagie2/Feuermagie-Mod.git"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/feuer-magie/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,7 +20,10 @@
 		],
 		"fabric-datagen": [
 			"net.feuermagie.pyromagie.FeuerMagieDataGenerator"
-		]
+		],
+      "client": [
+        "net.feuermagie.pyromagie.FeuerMagieClient"
+      ]
 	},
 	"mixins": [
 		"feuer-magie.mixins.json"
