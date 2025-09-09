@@ -1,2 +1,2 @@
 # Feuermagie-Mod
-Mod about fire magic
+A Mod about fire magic
