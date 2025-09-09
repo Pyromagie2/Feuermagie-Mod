@@ -15,6 +15,7 @@ public class ModItems {
 
     public static final Item FIRE_ESSENCE = registerItem("fire_essence",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,Identifier.of(FeuerMagie.MOD_ID+":fire_essence")))));
     public static final Item FIRE_INGOT = registerItem("fire_ingot",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,Identifier.of(FeuerMagie.MOD_ID+":fire_ingot")))));
+    public static final Item FIRE_STEEL = registerItem("fire_steel",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,Identifier.of(FeuerMagie.MOD_ID+":fire_steel")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(FeuerMagie.MOD_ID, name), item);
@@ -26,6 +27,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(FIRE_ESSENCE);
             entries.add(FIRE_INGOT);
+            entries.add(FIRE_STEEL);
         });
     }
 
