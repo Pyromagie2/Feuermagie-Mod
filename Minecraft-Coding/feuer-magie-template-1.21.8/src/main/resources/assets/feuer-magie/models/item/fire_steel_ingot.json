@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "feuer-magie:item/fire_steel"
+    "layer0": "feuer-magie:item/fire_steel_ingot"
   }
 }
