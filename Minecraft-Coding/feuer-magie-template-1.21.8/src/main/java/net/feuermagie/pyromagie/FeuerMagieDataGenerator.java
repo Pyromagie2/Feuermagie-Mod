@@ -7,5 +7,6 @@ public class FeuerMagieDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 
+
 	}
 }

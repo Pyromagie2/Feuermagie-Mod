@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item PINK_GARNET = registerItem("pink_garnet",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,Identifier.of(FeuerMagie.MOD_ID+":pink_garnet")))));
-
+    public static final Item FIRE_ESSENCE = registerItem("fire_essence",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,Identifier.of(FeuerMagie.MOD_ID+":fire_essence")))));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(FeuerMagie.MOD_ID, name), item);
     }
@@ -23,6 +23,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
+            entries.add(FIRE_ESSENCE);
         });
     }
 
