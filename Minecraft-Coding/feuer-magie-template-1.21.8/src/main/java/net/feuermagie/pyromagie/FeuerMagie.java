@@ -16,5 +16,6 @@ public class FeuerMagie implements ModInitializer {
 
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+
 	}
 }
