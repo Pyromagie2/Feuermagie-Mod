@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.feuermagie.pyromagie.block.ModBlocks;
 import net.feuermagie.pyromagie.item.ModItems;
+import net.feuermagie.pyromagie.item.ModItemsGroups;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,7 @@ public class FeuerMagie implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItemsGroups.registerItemGroups();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
 	}
