@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type" : "minecraft:model",
+    "model": "feuer-magie:item/fire_essence"
+  }
+}
