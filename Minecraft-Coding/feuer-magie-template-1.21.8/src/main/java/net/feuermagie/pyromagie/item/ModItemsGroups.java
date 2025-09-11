@@ -19,6 +19,7 @@ public class ModItemsGroups {
                     .displayName(Text.translatable("itemgroup.feuer-magie.fire_magie_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.FIRE_ESSENCE);
+                        entries.add(ModItems.FIRE_STEEL_INGOT);
                     })
                     .build());
     public static final ItemGroup  fire_magie_blocks = Registry.register(Registries.ITEM_GROUP,
@@ -27,6 +28,7 @@ public class ModItemsGroups {
                     .displayName(Text.translatable("itemgroup.feuer-magie.fire_magie_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.FIRE_ESSENCE_BLOCK);
+                        entries.add(ModBlocks.FIRE_STEEL_BLOCK);
                     })
                     .build());
 
