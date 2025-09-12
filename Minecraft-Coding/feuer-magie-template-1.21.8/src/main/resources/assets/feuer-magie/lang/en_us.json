@@ -3,6 +3,18 @@
     "item.feuer-magie.fire_steel_ingot": "Fire Steel Ingot",
     "item.feuer-magie.fire_steel_block": "Block of Fire Steel",
     "item.feuer-magie.fire_essence_block": "Block of Essence",
-    "itemgroup.feuer-magie.fire_magie_items": "Fire Items",
-    "itemgroup.feuer-magie.fire_magie_blocks": "Fire Blocks"
+    "item.feuer-magie.fire_essence_ore": "Fire Essence Ore",
+
+
+
+
+
+
+
+
+
+
+
+  "itemgroup.feuer-magie.fire_magie_items": "Fire Items",
+  "itemgroup.feuer-magie.fire_magie_blocks": "Fire Blocks"
 }

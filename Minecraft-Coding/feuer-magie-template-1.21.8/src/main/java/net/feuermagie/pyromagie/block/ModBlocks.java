@@ -17,9 +17,11 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block FIRE_STEEL_BLOCK = registerBlock("fire_steel_block",
-            AbstractBlock.Settings.create().strength(4F).requiresTool().sounds(BlockSoundGroup.COPPER));
+            AbstractBlock.Settings.create().strength(1F).requiresTool().sounds(BlockSoundGroup.COPPER));
     public static final Block FIRE_ESSENCE_BLOCK = registerBlock("fire_essence_block",
-            AbstractBlock.Settings.create().strength(4F).requiresTool().sounds(BlockSoundGroup.GRAVEL));
+            AbstractBlock.Settings.create().strength(1F).requiresTool().sounds(BlockSoundGroup.GRAVEL));
+    public static final Block FIRE_ESSENCE_ORE = registerBlock("fire_essence_ore",
+            AbstractBlock.Settings.create().strength(3F).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER));
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(FeuerMagie.MOD_ID, name));
@@ -40,6 +42,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.FIRE_STEEL_BLOCK);
             entries.add(ModBlocks.FIRE_ESSENCE_BLOCK);
+            entries.add(ModBlocks.FIRE_ESSENCE_ORE);
         });
     }
 

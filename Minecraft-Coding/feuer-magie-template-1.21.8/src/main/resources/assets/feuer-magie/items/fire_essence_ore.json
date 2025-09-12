@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type" : "minecraft:model",
+    "model": "feuer-magie:block/fire_essence_ore"
+  }
+}
